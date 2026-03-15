@@ -52,6 +52,10 @@ export const NEWS_SUMMARY_EMAIL_PROMPT = `Generate HTML content for a market new
 News data to summarize:
 {{newsData}}
 
+IMPORTANT: If the news data is empty (e.g., [] or no articles), generate a simple HTML message:
+<h3 class="mobile-news-title dark-text" style="margin: 30px 0 15px 0; font-size: 18px; font-weight: 600; color: #f8f9fa; line-height: 1.3;">📊 Market Update</h3>
+<p class="mobile-text dark-text-secondary" style="margin: 0 0 20px 0; font-size: 16px; line-height: 1.6; color: #CCDADC;">No market news available today. Markets may be closed or there are no significant updates at this time.</p>
+
 CRITICAL FORMATTING REQUIREMENTS:
 - Return ONLY clean HTML content with NO markdown, NO code blocks, NO backticks
 - Structure content with clear sections using proper HTML headings and paragraphs
