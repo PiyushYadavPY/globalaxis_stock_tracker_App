@@ -30,7 +30,7 @@ export const sendNewsSummaryEmail = async({email, date, newsContent}: {email: st
     .replace('{{newsContent}}', newsContent);
 
     const mailOptions = {
-        from: `"GlobalAxis" <globalaxis00@gmail.com>`,
+        from: `"GlobalAxis" <globalaxis2026@gmail.com>`,
         to : email,
         subject: `Market News Summary Today - ${date}`,
         text: `Today's market news summary from GlobalAxis`,
